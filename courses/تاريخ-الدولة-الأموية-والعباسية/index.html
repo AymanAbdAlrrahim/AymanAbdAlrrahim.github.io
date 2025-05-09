@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>أيمن عبد الرحيم</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      border-bottom: 1.5px solid #fff;
+      padding: 0 50px 10px;
+      text-align: center;
+    }
+    header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.1rem;
+        padding: 0 40px 5px;
+      }
+    }
+
+     
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 10px;
+      flex-wrap: wrap;
+    }
+
+     
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      background-color: #0055aa;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+     
+    nav a:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+
+     
+    nav a.active {
+      background-color: #002244;
+      border-bottom: 2px solid #ffd700;
+    }
+
+     
+    @media (max-width: 768px) {
+      nav {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+      }
+    }
+
+    .breadcrumb {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    main h1,h2,h3,h4,h5,h6 {
+      text-align: start;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 2rem;
+      text-align: right;
+    }
+
+     
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;  
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #back-to-top:hover {
+      background-color: #0055aa;
+      transform: translateY(-3px);
+    }
+
+    #back-to-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hero-slider {
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-container {
+      display: flex;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+
+    @keyframes slide {
+      0%, 25% { transform: translateX(0); }
+      33%, 58% { transform: translateX(-100%); }
+      66%, 91% { transform: translateX(-200%); }
+      100% { transform: translateX(-300%); }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="/">موقع المهندس أيمن عبد الرحيم</a></h1>
+    <nav>
+      <a href="/" class="">الرئيسية</a>
+      <a href="/articles/" class="">المقالات</a>
+      <a href="/courses/" class="">الدورات</a>
+      <a href="/lectures/" class="">محاضرات متفرقة</a>
+      <a href="/books/" class="">إحالات الكتب</a>
+      <a href="/plan/" class="">⚠ خطة</a>
+    </nav>
+    
+  </header>
+
+  
+  <div class="breadcrumb">
+    
+    
+      
+      <a href="/">الرئيسية</a>
+    
+      <span> › </span>
+      <a href="/courses/">الدورات</a>
+    
+    <span> › </span><span>تاريخ الدولة الأموية والعباسية</span>
+  </div>
+
+
+
+
+  <main>
+    
+<div class="container">
+  <h1>دورة تاريخ الدولة الأموية والعباسية</h1>
+
+  
+
+  
+  
+  <li class="course-link top"><a href="https://t.me/AymanAbdErrahem/177" target="_blank" rel="noopener">انقر هنا للحصول علي مواد الدورة كاملة &#43; ملحقاتها مجانا ←</a></li>
+  
+  
+
+  <div class="content"><p>أحداث وقعت فيه لم نشهدها.. ربما تتكرر معنا الآن.. لكن لأننا لم ندرِ ما حلّ بالأمس نظل نتعامل معها كأنها لأول مرة تقع.. رحلة الوصول لتاريخ فاتنا.. عاشت فيه أجيال وازدهرت فيه دول ثم ما لبثت أن اندثرت وولّت.. تاريخ حريص على كتابته بعض أسلافنا لعله يصل إلى مسامعنا يومًا، فنعرف كيف كان شكل مجتمعنا.. وما المراحل التي مرت بها أمتنا، فنرسم في خيالنا صورة عن ذلك الماضي الذي ربما لا يكون بعيدًا.</p>
+<p>في دورة التاريخ الأموي والعباسي، نسرد التاريخ الأموي والعباسي، ونقف على الدروس والعبر في خلال هذه الفترة.</p>
+<h2 id="محاور-الدورة">محاور الدورة:</h2>
+<ul>
+<li>أحداث الفتنة بين الصحابة، والمرويات في ذلك وما يصح فيها.</li>
+<li>بداية الخلافة الأموية.</li>
+<li>تولي يزيد بن معاوية الخلافة.</li>
+<li>ماسأة كربلاء.</li>
+<li>وقعة الحرة.</li>
+<li>الحجاج بن يوسف الثقفي وقتله عبد الله بن الزبير.</li>
+<li>خلافة عبد الملك بن مروان.</li>
+<li>بداية فتوحات ما وراء النهر.</li>
+<li>فتح الأندلس.</li>
+<li>معركة بلاط الشهداء.</li>
+<li>قيام الدولة العباسية.</li>
+<li>قيام الإمارة الأموية في الأندلس، واستعراض موجز لتاريخ الأندلس.</li>
+<li>العصر العباسي الثاني.</li>
+<li>العصر العباسي الثالث.</li>
+<li>العصر العباسي الرابع.</li>
+<li>الدويلات والممالك المستقلة.</li>
+<li>مراجعة ومناقشة للتاريخ الأموي والعباسي.</li>
+</ul>
+</div>
+  <hr>
+
+  
+  
+  <li class="course-link bottom"><a href="https://t.me/AymanAbdErrahem/177" target="_blank" rel="noopener">انقر هنا للحصول علي مواد الدورة كاملة &#43; ملحقاتها مجانا ←</a></li>
+  
+  
+
+  
+
+</div>
+<style>
+  .container {
+    margin: auto;
+  }
+
+  .container h1 {
+    border-bottom: 1px solid #ccc;
+    text-align: start;
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+
+  hr {
+    color: #ccc;
+  }
+
+
+  .course-link {
+    list-style: inside;
+    font-weight: 600;
+  }
+
+  .course-link a {
+    text-decoration: none;
+    color: #004080;
+    background-image: linear-gradient(270deg, #FFEF7E, #FFEF7E);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-position: 100% 85%;
+  }
+
+  .course-link a:hover {
+    font-size: 16.3px;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 550px) {
+    .container h1 {
+      font-size: 19px;
+      font-weight: 700;
+    }
+  }
+
+  .content h2 {
+    font-size: 19px;
+  }
+
+  @media (max-width: 600px) {
+    .content h2 {
+      font-size: 16px;
+    }
+  }
+
+</style>
+
+    <div class="back-link">
+      <a href="javascript:history.back()">→ العودة</a>
+    </div>
+      
+    <button id="back-to-top" aria-label="العودة إلى الأعلى">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+  <footer>
+    <p>"اللهم عُودًا حَمِيدًا قَرِيبًا لأيمن عبد الرحيم وأنس السلطان وكل مشايخنا وعلمائنا المغيبين في سجون الظلم"</p>
+  </footer>
+
+
+</body>
+</html>

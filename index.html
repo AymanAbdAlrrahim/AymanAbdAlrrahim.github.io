@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta name="generator" content="Hugo 0.147.0">
+  <meta charset="UTF-8">
+  <title>أيمن عبد الرحيم</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      border-bottom: 1.5px solid #fff;
+      padding: 0 50px 10px;
+      text-align: center;
+    }
+    header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.1rem;
+        padding: 0 40px 5px;
+      }
+    }
+
+     
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 10px;
+      flex-wrap: wrap;
+    }
+
+     
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      background-color: #0055aa;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+     
+    nav a:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+
+     
+    nav a.active {
+      background-color: #002244;
+      border-bottom: 2px solid #ffd700;
+    }
+
+     
+    @media (max-width: 768px) {
+      nav {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+      }
+    }
+
+    .breadcrumb {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    main h1,h2,h3,h4,h5,h6 {
+      text-align: start;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 2rem;
+      text-align: right;
+    }
+
+     
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;  
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #back-to-top:hover {
+      background-color: #0055aa;
+      transform: translateY(-3px);
+    }
+
+    #back-to-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hero-slider {
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-container {
+      display: flex;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+
+    @keyframes slide {
+      0%, 25% { transform: translateX(0); }
+      33%, 58% { transform: translateX(-100%); }
+      66%, 91% { transform: translateX(-200%); }
+      100% { transform: translateX(-300%); }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="/">موقع المهندس أيمن عبد الرحيم</a></h1>
+    <nav>
+      <a href="/" class="active">الرئيسية</a>
+      <a href="/articles/" class="">المقالات</a>
+      <a href="/courses/" class="">الدورات</a>
+      <a href="/lectures/" class="">محاضرات متفرقة</a>
+      <a href="/books/" class="">إحالات الكتب</a>
+      <a href="/plan/" class="">⚠ خطة</a>
+    </nav>
+    
+  </header>
+
+  
+
+
+
+  <main>
+    
+
+<div class="intro-container">
+  <div id="slideshow-container" aria-label="Image slideshow">
+    <img id="slide-img" src="" alt="صورة للمهندس أيمن" loading="lazy">
+    
+    <div class="slideshow-dots"></div>
+  </div>
+
+  <div class="intro-text">
+    <h1>المهندس أيمن عبد الرحيم</h1>
+
+    <p>
+      يَصف لكَ الداء والدواء ساخرًا، يتكلم بشكل هَزلي فِي اخطر الموضوعات التي تَمس حياتنا، 
+      وكأنهُ عُصارة خُبراء استراتيجيين مُجتمعين .. فيُضحكك ويُبكيك فِ آنٍ واحد!
+    </p>
+
+    <blockquote>
+      <strong>«يصول ويجول في تاريخ وتأسيس العلم من تقسيماته وفروعه ويربط هذا بديننا وينقد مايحتاج لنقد ويربط ما يحتاج لربط ويُسقط ما يحتاج لإسقاط بشكل سلس ولطيف!»</strong>
+      <br>
+      <strong>&gt; <a href="https://ar.quora.com/profile/%D9%85%D9%8A%D9%85-%D9%85%D9%8A%D9%85-25">ميم ميم</a></strong>
+    </blockquote>
+  </div>
+</div>
+
+<hr>
+
+<section class="main-content">
+  <h2 id="شهادة-معلم">شهادة مُعَلِّم</h2>
+<p>أن تعمل معلمًا لمدة طويلة مع آلاف التلاميذ، لسنوات طِوال يمكنك بسهولة أن تميز بين معادن الناس، ومع كثرة الاحتكاك تستطيع بسهولة أن تتوقع مستقبل الطالب الذي أمامك، خبرة حياتية متراكمة.</p>
+<p>جرت العادة أن أغلب الطلاب بجامعتي السابقة-هندسة أسيوط- يهمهم في المقام الأول اجتياز السنة الدراسية بدون خسائر، البغض الآخر هو الأكثر تميزا أن يحصل علي تقدير عالٍ في المواد، لم أنظر يوما لهم علي أنهم بضع درجات، بل بشر يحب ويكره ويتعلم ويملك حقوقا وشغفا يستطيعون البناء والتغيير ويجب اعدادهم جيدا. أعاملهم كأصدقائي أو أخواتي.</p>
+<p>حدث هذا الموقف الغريب عام 2004 بعد انتهائي من تدريس مقرر تشخيص الاعطال الميكانيكية(باستخدام الاختبارات غير المتلفة) لدفعة بكالوريوس ميكانيكا بهندسة اسيوط(دفعة 2004 ميكانيكا).</p>
+<p>دخل طالب مكتبي وقال لي: &ldquo;بارك الله فيك يا دكتور محمد علي مجهودك معنا، فأنا قد فهمت مادتك كويس جدا ولكن عندي طلبا وأتمني ان تقبله&rdquo; فقلت وما طلبك يا ايمن فقال لي &ldquo;ممكن مادخلش امتحان مادتك عشان احضر محاضراتها معاك السنة القادمة لكي اتمتع مرة اخري بتلك المادة المفيدة الشيقة؟!&rdquo; وعندما وجدني تعجبت من طلبه أكمل حديثه &ldquo;لأنني معايا 3 مواد من الترم الأول وكدا كدا أنا موجود في الكلية السنة الجاية&rdquo;.</p>
+<p>في الحقيقة هذا كان أغرب طلب قابلته علي مدار حياتي التدريسية التي امتدت لأكثر من 25  عاما سواء كانت في مصر أو اليابان.</p>
+<p>وكان ردي عليه: أرجوك يا أيمن ادخل الامتحان وأجب علي الأسئلة بقدر استطاعتك لأن هذا هو أبلغ شكر منك علي ما علمتك اياه وأيضا لأنني لن أكون هنا العام القادم وسوف أعود للوكالة اليابانية للفضاء مرة أخرى خلال أسابيع قليلة.</p>
+<p><strong>توقعت أن هذا الطالب يملك شيئًا مختلفًا، لم يكن يهتم بدرجاته بقدر ما كان يهتم بالعلم نفسه، بالمتعة المعرفية، بالتعرف علي كل جديد، بالبحث عن إجابة لأسئلته. أن يكون هدفك فقط التعلم والمتعة فهو حتمًا لن يرتبط بجامعة، أوكلية، أو تخصص بعينه، وإنما سيستمر معك إل أن تموت، وهكذا توقعت لن يسكن هذا الطالب أبدًا سيبحث عن المعرفة في كل شئ.</strong></p>
+<p>سيدرس علومًا أخرى، ربما يتخرج في كليات أخري، سيكون ذا شأن حتمًا، ولم يخيب ظني،  فلم يكتفِ ببكالوريوس الهندسة كما توقعت بسبب شغفه الشديد بالعلم الذي لمسته من طلبه الغريب ودارت السنون لأعلم وأنا في اليابان أنه قد تعلم علوما أخري كثيرة، فانتقل لكلية دار العلوم، وبعدها الأداب قسم علم النفس، وكلية الحقوق، ومعهد القراءات، وغيرهم وأصبح عالمًا موسوعيًا لديه مشروع معرفي كبير يسعي لتحقيقه، وكان هذا أغرب تلميذ قابلته في حياتي (أيمن عبد الرحيم).</p>
+<blockquote>
+<p>د. محمد علي حسن - اليابان</p></blockquote>
+
+
+<p class="end-text">اللهم ارض عن أيمن وآل أيمن، وعجل له بفرجك.</p>
+</section>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshow = {
+      config: {
+        images: [
+          "/images/ayman/ayman1.jpg",
+          "/images/ayman/ayman2.jpg",
+          "/images/ayman/ayman3.jpg",
+          "/images/ayman/ayman4.jpg",
+          "/images/ayman/ayman5.jpg",
+          "/images/ayman/ayman6.jpg",
+          "/images/ayman/ayman7.jpg"
+        ],
+        fadeDuration: 700,
+        displayDuration: 5000,
+        preload: true
+      },
+      elements: {
+        container: document.getElementById('slideshow-container'),
+        img: document.getElementById('slide-img'),
+        dotsContainer: document.querySelector('.slideshow-dots'),
+        prevBtn: document.querySelector('.slideshow-prev'),
+        nextBtn: document.querySelector('.slideshow-next')
+      },
+      state: {
+        currentIndex: 0,
+        isTransitioning: false,
+        touchStartX: 0,
+        touchEndX: 0,
+        interval: null
+      },
+      
+      init() {
+        this.preloadImages();
+        this.createDots();
+        this.setupEventListeners();
+        this.showSlide(0);
+        this.startAutoPlay();
+      },
+      
+      preloadImages() {
+        if (this.config.preload) {
+          this.config.images.forEach(src => {
+            new Image().src = src;
+          });
+        }
+      },
+      
+      createDots() {
+        this.config.images.forEach((_, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('slideshow-dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => this.goToSlide(index));
+          this.elements.dotsContainer.appendChild(dot);
+        });
+      },
+      
+      setupEventListeners() {
+        
+        
+        
+        
+        
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') this.prevSlide();
+          if (e.key === 'ArrowRight') this.nextSlide();
+        });
+        
+        
+        this.elements.container.addEventListener('touchstart', (e) => {
+          this.state.touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        
+        this.elements.container.addEventListener('touchend', (e) => {
+          this.state.touchEndX = e.changedTouches[0].clientX;
+          this.handleSwipe();
+        }, { passive: true });
+        
+        
+        this.elements.container.addEventListener('mouseenter', () => {
+          this.pauseAutoPlay();
+        });
+        
+        this.elements.container.addEventListener('mouseleave', () => {
+          this.startAutoPlay();
+        });
+      },
+      
+      showSlide(index) {
+        if (this.state.isTransitioning || index < 0 || index >= this.config.images.length) return;
+        
+        this.state.isTransitioning = true;
+        
+        
+        this.state.currentIndex = index;
+        
+        
+        this.elements.img.src = this.config.images[index];
+        this.elements.img.alt = `صورة للمهندس أيمن ${index + 1}`;
+        
+        
+        this.elements.img.onload = () => {
+          this.elements.img.classList.add('active');
+          
+          
+          document.querySelectorAll('.slideshow-dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+          });
+          
+          setTimeout(() => {
+            this.state.isTransitioning = false;
+          }, 100);
+        };
+        
+        
+        this.elements.img.onerror = () => {
+          console.error(`Failed to load image: ${this.config.images[index]}`);
+          this.state.isTransitioning = false;
+        };
+      },
+      
+      nextSlide() {
+        const nextIndex = (this.state.currentIndex + 1) % this.config.images.length;
+        this.showSlide(nextIndex);
+      },
+      
+      prevSlide() {
+        const prevIndex = (this.state.currentIndex - 1 + this.config.images.length) % this.config.images.length;
+        this.showSlide(prevIndex);
+      },
+      
+      goToSlide(index) {
+        this.showSlide(index);
+      },
+      
+      handleSwipe() {
+        const threshold = 50;
+        const difference = this.state.touchStartX - this.state.touchEndX;
+        
+        if (difference > threshold) {
+          this.nextSlide();
+        } else if (difference < -threshold) {
+          this.prevSlide();
+        }
+      },
+      
+      startAutoPlay() {
+        this.pauseAutoPlay();
+        this.state.interval = setInterval(() => this.nextSlide(), this.config.displayDuration);
+      },
+      
+      pauseAutoPlay() {
+        if (this.state.interval) {
+          clearInterval(this.state.interval);
+          this.state.interval = null;
+        }
+      }
+    };
+    
+    slideshow.init();
+  });
+</script>
+
+<style>
+ 
+.intro-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+ 
+#slideshow-container {
+    position: relative;
+    flex: 1 1 250px;
+    max-width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    aspect-ratio: 4/4;  
+    background: #f5f5f5;  
+  }
+
+  #slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out, transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #slideshow-container img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .slideshow-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+  }
+
+  .slideshow-dot {
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 8px;
+    height: 8px;
+  }
+
+  .slideshow-dot.active {
+    background: white;
+    transform: scale(1.2);
+  }
+  .slideshow-dot:hover {
+    background: rgba(255, 255, 255, 0.669);
+  }
+ 
+.intro-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: right;
+}
+
+.intro-text h1 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #333;
+  text-align: justify;
+}
+
+.intro-text blockquote {
+  border-right: 5px solid #004080;
+  padding-right: 15px;
+  margin: 2rem 0;
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 1rem;
+  color: #555;
+}
+
+.intro-text blockquote a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.intro-text blockquote a:hover {
+  text-decoration: underline;
+}
+
+
+ 
+.main-content {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: justify;
+}
+.main-content blockquote {
+  border: none;
+  font-style: normal;
+  background: none;
+  color: #666;
+  font-weight: 700;
+  text-align: left;
+  margin: auto 0;
+}
+
+ 
+.end-text {
+  background-color: #f1f5f9;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 2px solid #004080;
+  font-size: 1.1rem;
+  color: #004080;
+  font-family: 'Amiri', serif;  
+  font-weight: 700;
+}
+
+ 
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .intro-text {
+    text-align: center;
+  }
+  .intro-text h1{
+    font-size: 1.3rem;
+  }
+  .intro-text blockquote {
+    border-right: 4px solid #004080;
+    padding-right: 20px;
+    text-align: right;
+  }
+  #slideshow-container {
+    max-width: 100%;
+    aspect-ratio: 16/9;  
+  }
+}
+
+</style>
+
+
+    <div class="back-link">
+      <a href="javascript:history.back()">→ العودة</a>
+    </div>
+      
+    <button id="back-to-top" aria-label="العودة إلى الأعلى">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+  <footer>
+    <p>"اللهم عُودًا حَمِيدًا قَرِيبًا لأيمن عبد الرحيم وأنس السلطان وكل مشايخنا وعلمائنا المغيبين في سجون الظلم"</p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>أيمن عبد الرحيم</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      border-bottom: 1.5px solid #fff;
+      padding: 0 50px 10px;
+      text-align: center;
+    }
+    header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.1rem;
+        padding: 0 40px 5px;
+      }
+    }
+
+     
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 10px;
+      flex-wrap: wrap;
+    }
+
+     
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      background-color: #0055aa;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+     
+    nav a:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+
+     
+    nav a.active {
+      background-color: #002244;
+      border-bottom: 2px solid #ffd700;
+    }
+
+     
+    @media (max-width: 768px) {
+      nav {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+      }
+    }
+
+    .breadcrumb {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    main h1,h2,h3,h4,h5,h6 {
+      text-align: start;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 2rem;
+      text-align: right;
+    }
+
+     
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;  
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #back-to-top:hover {
+      background-color: #0055aa;
+      transform: translateY(-3px);
+    }
+
+    #back-to-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hero-slider {
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-container {
+      display: flex;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+
+    @keyframes slide {
+      0%, 25% { transform: translateX(0); }
+      33%, 58% { transform: translateX(-100%); }
+      66%, 91% { transform: translateX(-200%); }
+      100% { transform: translateX(-300%); }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="/">موقع المهندس أيمن عبد الرحيم</a></h1>
+    <nav>
+      <a href="/" class="">الرئيسية</a>
+      <a href="/articles/" class="">المقالات</a>
+      <a href="/courses/" class="">الدورات</a>
+      <a href="/lectures/" class="">محاضرات متفرقة</a>
+      <a href="/books/" class="">إحالات الكتب</a>
+      <a href="/plan/" class="active">⚠ خطة</a>
+    </nav>
+    
+  </header>
+
+  
+  <div class="breadcrumb">
+    
+    
+      
+      <a href="/">الرئيسية</a>
+    
+    <span> › </span><span>خطة لقراءة المهندس أيمن عبدالرحيم</span>
+  </div>
+
+
+
+
+  <main>
+    
+
+<div class="content">
+  <h1 class="page-title">خطة لقراءة المهندس أيمن عبدالرحيم</h1>
+  <p>خطة لدراسة تراث المهندس أيمن عبد الرحيم</p>
+<p>بسم الله الرحمن الرحيم</p>
+<p>لازم تبقى فاهم إن كلامي ده لو أنت عاوز تطلع على كل إنتاج البشمهندس ، وأنا بفترض إنك مشفتش أي حاجة ، أو هتبدأ تشوف من الأول . .</p>
+<h2 id="ندوات-المدخل">ندوات المدخل</h2>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/250">ندوة خريطة العلوم مع فريق معرفة</a></li>
+</ul>
+<p>في البداية وقبل أي شئ لازم تحب البشمهندس . . وتعرف هو مين أصلاً وبيعمل إيه يعني ودوره إيه هنا . . ده هتعرفه من خلال <a href="https://t.me/Ayman_Abdulraheem/250">ندوة خريطة العلوم مع فريق معرفة</a>.</p>
+<p>الندوة دي رايقة أوي ، البشمهندس زيه زي الشيخ الشعراوي ، زيه زي الشيخ كشك.. كلهم أسلوبهم بيعتمد على الجماهير بشكل أساسي ، بوجود الجمهور هتلاقي الأسلوب مختلف والكلام رايق أوي وجميل حتى لو كان هو هو نفس الكلام اللي بيتقال في محاضـرة تانية . .</p>
+<p>المحاضـرة دي هتفتحلك دماغك حرفياً ، وهتعرفك أنت المفروض تعرف إيه وتبدأ حياتك وتختار تخصصك إزاي ويبقى ليك هدف مربوط بفكرة الكون والإله والإنسان إزاي.</p>
+<blockquote>
+<p>ملحوظة : المحاضـرة الهدف منها التعرف على البشمهندس في البداية ، وإنك تحبه.. مش الهدف منها إنك تقعد تدور إن المحاضـرة مش كاملة وتقعد تقول يا جماعة المحاضـرة دي نجيبها كاملة منين ( مش هتلاقيها كاملة -_- ) ركز في اللي بقوله بس الأول .</p></blockquote>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/246">ندوة من هنا نبدأ . .  </a></li>
+</ul>
+<p>الندوة دي زيها زي الندوة الأولى ولكنها ندوة زي ما بسميها محتشمة شوية هتلاقي البشمهندس مش واخد راحته شوية في الكلام ، الهدف بالنسبالي من المحاضـرة دي إنك بعد م حبيت البشمهندس تحبه تاني ، وتعرف إنه واحد زيك بالظبط بس عرف يختار يعمل إيه في حياته ، وهتتعلم فيها أو منها المهارات الأساسية قبل ما نبدأ نتكلم أصلاً عن أنت المفروض تدرس إيه .</p>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/244">ندوة القراءة التابعة لفريق القاهرة</a></li>
+<li><a href="https://t.me/Ayman_Abdulraheem/243">ندوة القراءة التابعة لفريق الإسكندرية</a></li>
+</ul>
+<p>الندوتين دول المفروض تطلع منهم بمعنى كلمة &quot; اقرأ &quot; إنها مش المقصود بيها اقرأ المقصود تقرأ باسم ربك الذي خلق . . هتغير وجهة نظرك شوية عن موضوع القراءة لو كنت بتقرأ أو حتى لو مكنتش ، ولو إني أفضل لو مكنتش بتقرأ أو عندك مشكلة في القراءة تشوف الفيديو القصير اللي عن القراءة اللي أنا نشرته على صفحتي هنا .</p>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/489">كيف أتعلم ؟ ، وماذا أتعلم ؟ ، من هنا نبدأ  </a></li>
+</ul>
+<p>الندوة اللي مفيش منها اتنين ، الندوة 4 ساعات ونص بتكملك خريطتك المعرفية وبتقولك أنت المفروض تكون بتعمل إيه ، طب أنت مش لاقي شغفك تعال وأنا أخليك تلاقيه . .<br>
+هتتدرج معاك وهتحطلك مناهج لدراسة أي شئ لغات كتيرر ، وبحث علمي ، ولغة عربية ، وشعر وأدب ، وقصص طويلة كده . . الندوة دي لوحدها كنز والله إوعي تعديها كده .</p>
+<p>كده أنت خلصت المدخل إلى م . أيمن عبدالرحيم .</p>
+<hr>
+<h2 id="قبل-ما-تبدأ-في-دوراته-المختلفة--">قبل ما تبدأ في دوراته المختلفة . .</h2>
+<p>لو أنت عندك مشكلة ما قبلية . . يعني إيه قبلية ؟ ( يعني ليست بعدية ) مش من القبيلة، لو عندك مشكلة في شكوك في وجود إله أو ما شابه.. يبقى هتشوف <a href="https://t.me/Ayman_Abdulraheem/254">ندوة الاستلحاد</a> . . الحلقة ممتازة جداً والبشمهندس بيفصل فيها في الحديث عن الإلحاد وهل العصـر الحالي بيوجهنا ناحية الدين ولا المفروض إن ده الطبيعي في العصر ده. وندوة الأسئلة الوجودية : ندوة مهمة في ذات السياق .</p>
+<p>دي كده الفكرة الأولى بعد المدخل في فكرة أهم من كده . .<br>
+وهي إنك تطلع على فكر مالك بن نبي قبل ما تعرف أو تقرأ أو تشوف أي شئ للبشمهندس . .  <a href="https://t.me/Ayman_Abdulraheem/248">رابط</a></p>
+<p>1- <a href="https://t.me/Ayman_Abdulraheem/262">هندسة النهضة عند مالك بن نبي . .  </a>
+الندوة دي لن أبالغ إن قلت إنها أهم ندوة أنا سمعتها عن مالك بن نبي في حياتي ، الندوة هتلخصلك كتيـر جداً من اللي المفروض تعرفه عن فكر مالك بن نبي .</p>
+<p>2- <a href="https://t.me/Ayman_Abdulraheem/241">شروط النهضة لمالك بن نبي . .  </a>
+الندوة دي تعتبر تكملة أو زيادة إيضاح في الكلام<br>
+عن مالك بن نبي ولكـن ناهيك عن الصورة السيئة والصوت الأسوأ الندوة الاولى أفضل مليون مرة وبتعرض الفكرة بشكل أفضل .</p>
+<p>3- <a href="https://t.me/Ayman_Abdulraheem/238">الحلقة التاسعة من برنامج بره الصندوق . . &quot; القابلية للاستعمار &quot;  </a>
+لو شوفت الحلقة دي قبل ما تشوف هندسة النهضة مش هتكون فاهم القصة كويس، الحلقة دي هتكون سهلة جداً وواضحة بعد ما فهمت كويس مالك بن نبي .</p>
+<p>4- <a href="https://t.me/Ayman_Abdulraheem/245">محاضرة في التأسيس المعرفي والجماعات الوسيطة . .  </a></p>
+<p>5- <a href="https://t.me/Ayman_Abdulraheem/1382">الجماعات الوسيطة وبناء المجتمعات  </a></p>
+<p>الندوتين دول هيفتحولك باب واسع جداً وهيفهموك الفكرة الأساسية في الدورة الأشهر على الإطلاق وهي دورة &quot; تأسيس الوعي &quot; أو دورة &quot; تأسيس وعي المسلم المعاصر &quot; .</p>
+<p>6- <a href="https://t.me/Ayman_Abdulraheem/230">الحلقة الأولى من برنامج بره الصندوق  </a></p>
+<p>الحلقة دي بتتكلم في الأساس عن عالم الأفكار ، وإزاي مجرد التغيير في عالم الأفكار هيغيرلك الواقع اللي أنت بتتعامل معاه وهيكون ليه نتايج ملموسة . .<br>
+المحاضـرة دي مرتبطة جداً بالحلقة الأولى من اي دورة تأسيس .</p>
+<p>7- <a href="https://t.me/Ayman_Abdulraheem/234">الحلقة الخامسة من برنامج بره الصندوق &quot; الإصلاح بين الدولة والمجتمع &quot; </a></p>
+<p>الحلقة دي مشتركة مع الندوتين اللي تم ذكرهم رقم 4 ، و 5 ولكـن هي برده مشتركة مع الحلقة الأولى ل دورة التأسيس 1 . .</p>
+<p>وبالتالي كل ده تأهيل للدخول في عالم تأسيس 1 .</p>
+<p>كده أنت خلصت المدخل ل م . أيمن ، وكذلك خلصت فكرة مالك بن نبي والأفكار المتعلقة بالمرحلة الأولى فى التأسيس .</p>
+<hr>
+<h2 id="نبدأ-في-الدورات--">نبدأ في الدورات . .</h2>
+<p>والمشروع في الدورات ممكن يتقسم إلى 6 أقسـام: ( الدورة التعريفية ، التأسيس 1 ، والتأسيس 2 ، التاريخ 1, التاريخ 2 ، اللغة ، علم النفس ، التربية )</p>
+<p><strong>في البداية يجب الإطلاع على التأسيس 1 (<a href="https://t.me/Ayman_Abdulraheem/3">رابط</a>)</strong></p>
+<p>دورة تأسيس المسلم المعاصر هي دورة لشقلبة حياتك ، أكتر من حد بيكلمني يقولي الدورة حلوة بس هو دمرلي المفاهيم اللي عندي ومحطش مكانها حاجة ، مجرد معرفتك للواقع شئ جيد حتى لو كان نفسياً مش كويس . .</p>
+<p>الدورة عبارة عن حلقة عن عالم الأفكار والوقف . . والمفروض إنك عرفت المفاهيم دي في المرحلة السابقة .</p>
+<p>من نص الحلقة الثانية مثلاً هيبدأ السرد التاريخي.. حال المسلمين قبل وبعد مجئ الاستعمار في &ldquo;الهند ، اندونيسيا ، إشارات إلى مصر ، تركيا ، إيران ، أفغانستان&rdquo;.. بمجرد ما تسمع الكلام عن اندونيسيا أو الهند هتفهم كل شئ هييجي بعد كده . .</p>
+<p>هيتبقى ليك حلقتين: حلقة عن دور اللغة في الخطة دي كلها ودي أنا مش هذكرها هنا، وحلقة عن إيه اللي ممكن نعمله ودي الحلقة الاخيرة من الدورة .</p>
+<p>علشـان تطلع على الدورة يفضل تشوف دورة 2017 الموجودة فيديو كلها ، ثم ترجع ل 2013 تشوف الحلقة الرابعة عن إفريقيا ، الخامسة الحديث عن تركيا ، السابعة والحديث عن إيران وأفغانستان. <a href="https://t.me/Ayman_Abdulraheem/41">رابط</a></p>
+<p>في نهاية الدورة دي هيجيلك شعور إن إحنا كنا حلوين أوي بس كل اللي حصل إنهم ضحكوا علينا و و و . . علشـان كده لازم بسرعة تلحق تسمع تأسيس 2 واللي هتقولك إن اللي بتقوله ده وهم من خلال تسليطها الضوء على عدد من المفاهيم وملاحظة التغيرات اللي حصلت على مر العصور <a href="https://t.me/Ayman_Abdulraheem/82">رابط</a></p>
+<p>كده انت خلصت تأسيس واحد واتنين، ممكن تدخل على التاريخ علطول، دورة مدخل إلى التاريخ ليها نسختين فيديو . .</p>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/123">نسخة 2014</a> (6 حلقات).</li>
+<li><a href="https://t.me/Ayman_Abdulraheem/128">نسخة 2017</a> (9 حلقات).</li>
+</ul>
+<p>هتبدأ الأول ب نسخة 2014 أو على الأقل على الأقل أول حلقتين منها علشـان تتعرف على المؤرخين وفلسفات التاريخ المختلفة . .</p>
+<p>من بعد دورة 2014 مبـاشرة . . تروح للحلقة السادسة من برنامج بره الصندوق &quot; <a href="https://t.me/Ayman_Abdulraheem/235">التاريخ الإسلامي كتبه وكيف نقرأه</a>&quot; هتكمل فكرة المؤرخين والفلسفات.</p>
+<p>من هنا ممكن تروح تسمع علطول <a href="https://t.me/Ayman_Abdulraheem/235">السيرة النبوية العهد المكي</a>، هتفهم السيرة من البداية وبعض أحداث ما قبل الإسلام.</p>
+<p>وبعدين تروح تسمع <a href="https://t.me/Ayman_Abdulraheem/145">تاريخ الخلفاء الراشدين</a></p>
+<p>ترجع بعد كده لمدخل التاريخ 2017 ودي هتفهمك القصة من البداية لحد الوصول للدولة الأموية والعباسية.</p>
+<hr>
+<p>من حيث التربية فهي دورة واحدة فقط وهي دورة &ldquo;<a href="https://t.me/Ayman_Abdulraheem/159">البيت المسلم</a>&rdquo; وهي الدورة الوحيدة اللي نقدر نقول إنها معدة للحديث عن التربية للبشمهندس ، والدورة عالية جداً ، وفيها كمية ضحك خيالية زي دورة علم النفس كده ( آه الضحك هدف أساسي بالنسبالي ) وفيها بيروي البشمهندس أحداث ومواقف ممتعة جداً ومفيدة جداً على مستوى العلاقات . .</p>
+<blockquote>
+<p>وإن كانت التربية مبثوثة في كل محاضراته وفي شكله وفي طريقة كلامه وفي اختلافه وفي كونه هو والله.</p></blockquote>
+<p>يتبقى لنا الحديث عن اللغة ، وعلم النفس ولكـن قبل ذلك المداخل:</p>
+<p><a href="https://t.me/Ayman_Abdulraheem/209">الدورة التعريفية بالعلوم الإنسانية</a> . .<br>
+في الدورة دي هتعرف مدخل وأحاديث عن العلوم الطبيعية في حلقات مدخل 1 ، ومدخل 2 وطبعاً فيها مداخل عن العلوم الإنسانية ، وبعدين تعرف المداخل لعلم النفس في محاضرة علم النفس ، ومدخل للفلسفة ، وفي مدخل للسانيات ، ومدخل للعلوم الطبيعية ولكـن اللي موجود فيديو ( مدخل 1 ، مدخل 2 ، محاضرة علم النفس ، ومحاضرة الفلسفة بس مش كاملة ).</p>
+<p>فيه دورة صوتية مكتملة ممكن تسمعها. <a href="https://t.me/Ayman_Abdulraheem/1222">رابط</a></p>
+<p>خلصت دي هتلاقي في دربكة شديدة جداً في دماغك.. هترجع في اللحظة دي للحلقة <a href="https://t.me/Ayman_Abdulraheem/232">الثالثة</a> والحلقة <a href="https://t.me/Ayman_Abdulraheem/233">الرابعة</a> من برنامج بره الصندوق علشـان تقدرتغير مفهومك عن التقدم والتخلف . .</p>
+<p>ممكن هنا كمان تاخد ندوة &quot; <a href="https://t.me/Ayman_Abdulraheem/256">ذواقة الشاي</a> &quot; فهي تعتبر مدخل لعلم الإحصـاء.</p>
+<p>وتاخد ندوة <a href="https://t.me/Ayman_Abdulraheem/268">التكافل الاجتماعي علاقة الإسلام بالإقتصاد</a>.</p>
+<p>وهتلاقي هنا مداخل تانية كتير ( مدخل للغة العربية ، النحو ، والصرف ، والعروض ، والبلاغة ، والتذوق الشعري وغيره . . ) ممكن تبص عليها برده. <a href="https://t.me/Ayman_Abdulraheem/1209">رابط</a></p>
+<hr>
+<p>بعد كده تبدأ تدخل في موضوع اللغة وعاوز أكد إنك بعد المدخلين الأولنيين مدخل عام كده للبشمهندس ، تقدر تروح تسمع برانش اللغة مباشرة ، أو علم النفس او أو أو . .</p>
+<p>بالنسبة للغة هتبدأ بـ : الحلقة السادسة من دورة تأسيس وعي المسلم المعاصر واللي قولنا إنها بتتكلم عن اللغة، وحلقة الهندسة باللغة العبرية الفصحي . . ( ودي موجود منها نسختين اسمعهم الاتنين أحسن :D ).
+<a href="https://t.me/Ayman_Abdulraheem/242">رابط</a>
+<a href="https://t.me/Ayman_Abdulraheem/274">رابط</a></p>
+<ul>
+<li>
+<p>حلقة بره الصندوق الحلقة الثانية &quot; <a href="https://t.me/Ayman_Abdulraheem/231">اللغة وعلاقتها بالدين</a> &quot;</p>
+</li>
+<li>
+<p>الحلقة الثامنة : <a href="https://t.me/Ayman_Abdulraheem/237">لماذا نعلم أطفالنا باللغات الأجنبية  </a></p>
+</li>
+<li>
+<p>الحلقة السابعة : <a href="https://t.me/Ayman_Abdulraheem/236">مجتمع بلا مدارس | بره الصندوق |  </a></p>
+</li>
+<li>
+<p>ندوة <a href="https://t.me/Ayman_Abdulraheem/269">الوعي اللغوي في ثورة اللغة</a>.</p>
+</li>
+<li>
+<p><a href="https://t.me/Ayman_Abdulraheem/191">دورة الوعي اللغوي</a> . .<br>
+ودي دورة كاملة ممتعة نزلت فيديو قريباً مهمة جداً بشكل مبالغ فيه، هتسمع عادي بس لما توصل للمحاضـرة الخامسة تروح بسرعة تسمع بعدها المحاضرة التاسعة، (السلسلة كاملة).</p>
+</li>
+</ul>
+<p>بعدين هتسمع الحلقة السادسة بعنوان &ldquo;كيف تصبح مهندساً لغوياً&rdquo; هترجع للندوات دي:</p>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/1387">هندسة اللغة | م أيمن عبدالرحيم</a></li>
+<li><a href="https://t.me/Ayman_Abdulraheem/260">هندسة اللغة .. ضرورة أم رفاهية؟ | م/ أيمن عبدالرحيم  </a></li>
+<li><a href="https://t.me/Ayman_Abdulraheem/1385">هندسة اللغة .. رفاهية أم ضرورة ؟ | م/ أيمن عبد الرحيم جـ 1  </a></li>
+<li><a href="https://t.me/Ayman_Abdulraheem/1386">هندسة اللغة .. رفاهية أم ضرورة جـ 2 | م/ أيمن عبدالرحيم  </a></li>
+</ul>
+<p>بعدين تكمل باقي حلقات الوعي اللغوي زي ما أنت .</p>
+<p>وفي دورة كاملة بعنوان &quot; <a href="https://t.me/Ayman_Abdulraheem/180">مدخل إلى اللغة العربية</a>&quot; ممكن تطلع عليها في البداية أو في مكانها هنا.</p>
+<hr>
+<p>يتبقى لك علم النفس . .</p>
+<ul>
+<li>
+<p><a href="https://t.me/Ayman_Abdulraheem/168">هتشوف دورة علم النفس كاملة</a></p>
+</li>
+<li>
+<p>وتشوف مناقشة &ldquo;<a href="https://t.me/Ayman_Abdulraheem/273"> القرآن وعلم النفس</a> &quot;</p>
+</li>
+</ul>
+<p>وأخيراً في حاجات على الهامش كده زي لقاء البشمهندس مع الشيخ أحمد سالم ، مع د. أبو البخاري وهكذا..</p>
+<ul>
+<li><a href="https://t.me/Ayman_Abdulraheem/247">رابط</a></li>
+<li><a href="https://t.me/Ayman_Abdulraheem/249">رابط</a></li>
+</ul>
+<hr>
+<p>طبعا فيه محاضرات وندوات متفرقة كتير أكيد لم يتم ذكرها، ودورات صوتية أخرى كتيرة ممكن تسمعها ف اي وقت موجودة ع <a href="https://t.me/Ayman_Abdulraheem/">القناة</a></p>
+<p>إضافة إلى <a href="http://t.me/Ayman_Abdulraheem_bot">بوت م. أيمن عبد الرحيم</a> مرفوع عليه كل دوراته وندواته صوتية ومرئية وبيتم تحديثه باستمرار.</p>
+<p>وبكده تقريباً أكاد أجزم إنك هتكون قرأت بشكل كبير م. أيمن عبدالرحيم ، ولو وصلت لهنا يعني قرأت كل ده فأنا عاوز أقولك إني سعيد والله لأن البوست ده أتكتب في أكثر من 3 ساعات فشكراً لاهتمامك يعني.</p>
+<p>وربنا يجزيكم كل الخير ويعينكم .</p>
+<p>بوست من 2018 - إعادة نشر.</p>
+<p><strong>__ د. أحمد رزة __</strong></p>
+<hr>
+<p>متنساش تنشر <a href="https://t.me/Ayman_Abdulraheem">القناة</a> وتعرف الناس بالمهندس</p>
+
+</div>
+
+<style>
+
+  .content {
+    text-align: justify;
+    margin: auto;
+  }
+  
+  .content .page-title {
+    border-bottom: 1px solid #ccc;
+    font-size: 27px;
+    text-align: start;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  @media (min-width: 600px) {
+    .content {
+      max-width: 600px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content .page-title {
+      font-size: 21px;
+    }
+    .content h2 {
+      font-size: 16px;
+    }
+    .content {
+      font-size: 15px;
+    }
+  }
+</style>
+
+
+    <div class="back-link">
+      <a href="javascript:history.back()">→ العودة</a>
+    </div>
+      
+    <button id="back-to-top" aria-label="العودة إلى الأعلى">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+  <footer>
+    <p>"اللهم عُودًا حَمِيدًا قَرِيبًا لأيمن عبد الرحيم وأنس السلطان وكل مشايخنا وعلمائنا المغيبين في سجون الظلم"</p>
+  </footer>
+
+
+</body>
+</html>
